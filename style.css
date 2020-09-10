@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffe6f0;
+  color: #4a4a4a;
+}
+
+#bg {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 48rem;
+  background: rgba(255, 77, 148, 1) center center no-repeat;
+  animation: slide 10s infinite;
+}
+
+#bg h1 {
+  padding: 1rem;
+  border-top: 4px solid #4a4a4a;
+  border-bottom: 4px solid #4a4a4a;
+  font-size: 13rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-family: "Curlz MT", serif;
+
+}
+
+@keyframes slide { 
+  0% { 
+  background-color: rgba(255, 77, 148, 0.8); 
+}
+  12% { 
+  background-color: rgba(255, 77, 148, 0.6);
+}
+  25% { 
+  background-color: rgba(255, 77, 148, 0.4);
+}
+  50% { 
+  background-color: rgba(255, 77, 148, 0.2);
+}
+  62% {
+  background-color: rgba(255, 77, 148, 0.4);
+}
+  75% {
+  background-color: rgba(255, 77, 148, 0.6);
+}
+  87% {
+  background-color: rgba(255, 77, 148, 0.8);
+}
+  100% {
+  background-color: rgba(255, 77, 148, 1);
+}
+}
+
+p {
+  font-size: 1.5rem;
+  padding: 2rem 20%;
+  line-height: 1.4;
+  font-family: "Candara", sans-serif;
+  clear: left;
+}
+
+p:first-letter {
+  float: left;
+  padding-right: 1.4rem;
+  font-family: "Curlz MT", serif;
+  font-size: 9rem;
+  color: #ff4d94;
+  line-height: 0.87;
+}
+
+
+
+
