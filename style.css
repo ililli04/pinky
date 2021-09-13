@@ -1,78 +1,55 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  background-color: #ffe6f0;
-  color: #4a4a4a;
+  background-color: rgba(255, 77, 148, 0.2);
+  color: #4A4A4A;
+  font-size: 16px;
 }
-
-#bg {
-  display: grid;
+.header {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 48rem;
-  background: rgba(255, 77, 148, 1) center center no-repeat;
-  animation: slide 10s infinite;
+  height: 80vh;
+  background: #FF4D94;
+  animation: bg-color 10s linear infinite alternate;
 }
-
-#bg h1 {
-  padding: 1rem;
-  border-top: 4px solid #4a4a4a;
-  border-bottom: 4px solid #4a4a4a;
-  font-size: 13rem;
+.header h1 {
+  padding: 0.75rem;
+  border-top: 4px solid #4A4A4A;
+  border-bottom: 4px solid #4A4A4A;
+  font-size: 15vw;
   font-weight: bold;
   letter-spacing: 1rem;
   text-transform: uppercase;
   font-family: "Curlz MT", serif;
-
 }
-
-@keyframes slide { 
-  0% { 
-  background-color: rgba(255, 77, 148, 0.8); 
+@keyframes bg-color {
+  from {
+  background-color: rgba(255, 77, 148, 0);
+  }
+  to {
+    background-color: rgba(255, 77, 148, 1);
+  }
 }
-  12% { 
-  background-color: rgba(255, 77, 148, 0.6);
+.section {
+  width: 80%;
+  margin: auto;
 }
-  25% { 
-  background-color: rgba(255, 77, 148, 0.4);
-}
-  50% { 
-  background-color: rgba(255, 77, 148, 0.2);
-}
-  62% {
-  background-color: rgba(255, 77, 148, 0.4);
-}
-  75% {
-  background-color: rgba(255, 77, 148, 0.6);
-}
-  87% {
-  background-color: rgba(255, 77, 148, 0.8);
-}
-  100% {
-  background-color: rgba(255, 77, 148, 1);
-}
-}
-
-p {
-  font-size: 1.5rem;
-  padding: 2rem 20%;
+.section p {
+  font-size: 1.2rem;
+  padding: 2rem;
   line-height: 1.4;
-  font-family: "Candara", sans-serif;
+  font-family: Candara, sans-serif;
   clear: left;
 }
-
 p:first-letter {
   float: left;
-  padding-right: 1.4rem;
+  padding-right: 0.75rem;
   font-family: "Curlz MT", serif;
-  font-size: 9rem;
-  color: #ff4d94;
-  line-height: 0.87;
+  font-size: 5rem;
+  color: #FF4D94;
+  line-height: 0.75;
 }
-
-
-
-
