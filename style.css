@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   background: #FF4D94;
   animation: bg-color 3s linear infinite alternate;
 }
